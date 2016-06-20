@@ -1,0 +1,54 @@
+h1 {
+  font-family: $helvetica;
+  font-size: 1.999*$em;
+  font-weight: bold;
+  text-align: right;
+}
+
+h2 {
+  font-family: $helvetica;
+  font-size: 1.414*$em;
+  font-weight: bold;
+}
+
+* + h2 {
+  margin-top: 2.828*$em;
+}
+
+h3 {
+  font-size: 1.414*$em;
+  font-style: italic;
+}
+
+h4 {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.text-black {
+  color: $black;
+}
+.text-white {
+  color: $white;
+}
+.text-yellow {
+  color: $yellow;
+}
+
+.pull-self {
+  margin-right: -.375em;
+}
+.amp {
+  font-family: $baskerville;
+  font-size: 1.414em;
+  font-style: italic;
+  font-weight: normal;
+  line-height: 1.414*$em;
+}
+
+.align-center {
+  text-align: center;
+}
+.align-right {
+  text-align: right;
+}

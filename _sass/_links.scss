@@ -1,0 +1,62 @@
+.link,
+.bar {
+  color: $black;
+  display: inline-block;
+  font-weight: bold;
+  font-family: $helvetica;
+  line-height: 1em;
+  position: relative;
+  text-decoration: none;
+}
+.link.text-white,
+.bar.text-white {
+  color: $white;
+}
+.link:after,
+.bar:after {
+  background: $black;
+  content: '';
+  left: 0;
+  height: .1875em;
+  position: absolute;
+  top: -.1875em;
+  transition: background .3s;
+  width: 100%;
+}
+.link:hover:after {
+  background: $yellow !important;
+}
+.link-inline,
+.bar-inline {
+  margin: 0 .125*$em;
+}
+.bar.bar-black:after,
+.link.bar-black:after {
+  background: $black;
+}
+.bar.bar-white:after,
+.link.bar-white:after {
+  background: $white;
+}
+.bar.bar-yellow:after,
+.link.bar-yellow:after {
+  background: $yellow;
+}
+
+.bar.bar-hover-black:hover:after,
+.link.bar-hover-black:hover:after {
+  background: $black !important;
+}
+.bar.bar-hover-white:hover:after,
+.link.bar-hover-white:hover:after { 
+  background: $white !important;
+}
+.bar.bar-hover-yellow:hover:after,
+.link.bar-hover-yellow:hover:after {
+  background: $yellow !important;
+}
+
+
+.page-main .link-inline {
+  font-size: $em
+}

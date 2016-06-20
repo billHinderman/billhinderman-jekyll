@@ -1,0 +1,11 @@
+.site-nav {
+  display: inline-flex;
+  flex-flow: column wrap;
+  @media screen and (min-width: $s-m) {
+    flex-flow: row wrap;
+  }
+}
+.site-nav-link {
+  font-size: 1.25em;
+  margin: .5*$em;
+}

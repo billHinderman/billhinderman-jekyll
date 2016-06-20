@@ -1,0 +1,33 @@
+$helvetica: Helvetica Neue,"nimbus-sans",Helvetica,Arial,sans-serif;
+$serif: "freight-text-pro",Georgia,serif;
+$baskerville: Baskerville,"baskerville-urw",Georgia,serif; 
+
+$white: #fdfdfd;
+$white_off: #fefefb;
+$white_not: #fafaf8;
+$black: #231f20;
+$black_real: #000;
+$grey_lt: #eee;
+$grey_md: #aaa;
+$grey_dk: #333;
+$yellow: #f1c40f;
+$blue: #32C0D3;
+$blue_lt: #CBEAEF;
+
+$black_quiet: rgba($black,.4);
+$white_quiet: rgba($white,.4);
+$yellow_quiet: rgba($yellow,.4);
+
+$em: 16px;
+
+$s: 320px;
+$s-m: 480px;
+$m: 640px;
+$m-l: 800px;
+$l: 960px;
+$l-xl: 1120px;
+$xl: 1280px;
+
+
+@-webkit-keyframes love {0%, 100%{-webkit-transform:scale(1);transform:scale(1)}10%{-webkit-transform:scale(1.3);transform:scale(1.3)}25%{-webkit-transform:scale(1.2);transform:scale(1.2)}35%{-webkit-transform:scale(1.3);transform:scale(1.3)}}
+@keyframes love {0%, 100%{-webkit-transform:scale(1);transform:scale(1)}10%{-webkit-transform:scale(1.3);transform:scale(1.3)}25%{-webkit-transform:scale(1.2);transform:scale(1.2)}35%{-webkit-transform:scale(1.3);transform:scale(1.3)}}

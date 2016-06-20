@@ -1,0 +1,57 @@
+input:not([type="submit"]):not([type="file"]):not([type="checkbox"]):not([type="radio"]),
+textarea,
+.input,
+.textarea {
+   background: $white_not;
+   border: .0835*$em solid $grey_lt;
+   border-right: 0;
+   border-left: 0;
+   color: $black;
+   display: block;
+   font-family: $serif;
+   font-size: 1.25*$em;
+   padding: .25*$em;
+   min-width: 16*$em;
+   -webkit-appearance: none;
+   transition: border-color .3s;
+   width: 100%;
+   &:hover,
+   &:focus {
+    border-color: $black;
+    color: $black;
+   }
+}
+.form-label {
+  display: inline-block;
+  font-family: $helvetica;
+  font-size: $em;
+  font-weight: bold;
+}
+.flex-input {
+  flex-grow: 1;
+  flex-basis: 18*$em;
+  margin: $em;
+}
+form {
+  .flex-container {
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 0 -1*$em;
+  }
+  label {
+    display: block;
+    margin: $em 0;
+  }
+  h2 {
+    border-bottom: .1875em solid;
+    line-height: .9375;
+    margin: $em 0;
+    text-align: center;
+    text-shadow: $white 1px 0 0,$white -1px 0 0;
+  }
+  b {
+    color: $yellow;
+    font-size: 1.875*$em;
+    padding-left: .125*$em;
+  }
+}

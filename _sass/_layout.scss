@@ -1,0 +1,40 @@
+.flex-container {
+  align-content: flex-start;
+  align-items: flex-start;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.wrapper-s,
+.wrapper,
+.wrapper-l,
+.wrapper-max {
+  padding: 2*$em;
+  margin: auto;
+  width: 100%;
+}
+.wrapper-s {
+  max-width: 50*$em;
+}
+.wrapper {
+  max-width: 64*$em;
+}
+.wrapper-l {
+  max-width: 80*$em;
+}
+.wrapper-max {
+  padding: 0 2*$em;
+  margin: 2*$em auto;
+}
+
+.align-center {
+  text-align: center;
+}
+
+p + *,
+ul + p,
+img + p,
+object + p {
+  margin-top: 1.414*$em;
+}

@@ -1,0 +1,19 @@
+.site-footer {
+  background: $white;
+}
+.love-footer {
+  border-bottom: 1px solid $grey_lt;
+  text-align: center;
+  font-family: Helvetica Neue;
+  font-weight: bold;
+  padding: 6*$em 2*$em;
+}
+.footer-entity {
+color: $grey_md;
+  margin-right: 1*$em;
+}
+.love {
+  height: .75*$em;
+  -webkit-animation: love 1.414s infinite ease-in-out;
+  animation: love 1.414s infinite ease-in-out;
+}

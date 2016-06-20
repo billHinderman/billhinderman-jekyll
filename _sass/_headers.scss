@@ -1,0 +1,90 @@
+.site-header {
+  position: relative;
+  z-index: 1;
+}
+.site-header .flex-container {
+  align-items: center;
+  height: 10.75*$em;
+  justify-content: space-between;
+}
+.site-title {
+
+}
+#header-logo {
+  width: 5*$em;
+}
+
+.home-header {
+  align-items: center;
+  background: $yellow;
+  display: flex;
+  justify-content: flex-end;
+  min-height: 100vh;
+  padding: 2*$em;
+}
+
+#home-logo {
+  flex-basis: 25%;
+  max-height: 33.33vh;
+}
+
+#home-bold {
+  position: absolute;
+  bottom: -17vh;
+  height: 50vh;
+  left: 0;
+  width: 100%;
+}
+
+.page-header {
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: left;
+  margin-top: -10.75*$em;
+  min-height: 66.666vh;
+  padding-top: 8.0625*$em;
+  position: relative;
+  z-index: 0;
+}
+
+.theme-dark,
+.theme-black {
+  .site-header .link {
+    color: $white;
+  }
+  .site-header .link:after {
+    background: $white;
+  }
+  .page-header {
+    color: $white;
+  }
+}
+.theme-yellow,
+.theme-blue {
+  .site-header .link:hover:after {
+    background: $white !important;
+  }
+}
+
+.oneliner-header {
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -10.75*$em;
+  min-height: 66.666vh;
+  padding-top: 8.0625*$em;
+  position: relative;
+  z-index: 0;
+}
+.about-oneliner {
+  display: block;
+  font-family: $helvetica;
+  font-size: 2*$em;
+  font-weight: bold;
+  text-align: left;
+  max-width: 40*$em;
+}

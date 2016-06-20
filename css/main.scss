@@ -1,0 +1,27 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+@import
+        "vars"
+;
+
+@import
+        "reset",
+        "base",
+        "layout",
+        "text",
+        "links",
+        "input"
+;
+
+@import
+        "content",
+        "headers",
+        "footers",
+        "nav",
+        "theme"
+;
+
+@import "fa/font-awesome";

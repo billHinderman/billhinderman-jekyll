@@ -1,0 +1,9 @@
+<header role="banner" class="site-header {% if page.theme %}theme-{{ page.theme }}{% endif %}">
+  <div class="wrapper-l flex-container">
+    <a class="site-title" href="{{ site.baseurl }}/">
+      <img id="header-logo" src="{{ site.baseurl }}/assets/image/sbg{% if page.theme %}-{{ page.theme }}{% endif %}.svg" />
+    </a>
+    {% include nav.html %}
+  </div>
+</header>
+ 

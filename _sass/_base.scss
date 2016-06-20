@@ -1,0 +1,62 @@
+body {
+  background: $white;
+  color: $black;
+  display: flex;
+  font-family: $serif;
+  flex-direction: column;
+  line-height: 1.44;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+::-moz-selection {
+  background: $yellow;
+  color: $black;
+}
+::selection {
+  background: $yellow;
+  color: $black;
+}
+
+img {
+  max-width: 100%;
+}
+
+.bg-white {
+  background: $white;
+}
+.bg-white-off {
+  background: $white_off;
+}
+.bg-white-not {
+  background: $white_not;
+}
+.bg-black {
+  background: $black;
+}
+.bg-gdk {
+  background: $grey_dk;
+}
+.bg-glt {
+  background: $grey_lt;
+}
+.bg-yellow {
+  background: $yellow;
+}
+.bg-blue {
+  background: $blue;
+}
+
+.border {
+  border-bottom: 1px solid $grey_lt;
+  border-top: 1px solid $grey_lt;
+}
+.border-bottom {
+  border-bottom: 1px solid $grey_lt;
+}
+.border-top {
+  border-bottom: 1px solid $grey_lt;
+  border-top: 1px solid $grey_lt;
+}
