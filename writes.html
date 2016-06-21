@@ -1,0 +1,36 @@
+---
+layout: page
+title: Writing
+permalink: /writes
+---
+
+  <h2 class="page-heading">Better Writing</h2>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      {% if post.categories contains 'featured' %}
+        <li>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+
+  <h2 class="page-heading">Worse Writing</h2>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      {% unless post.categories contains 'featured' %}
+        <li>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+        </li>
+      {% endunless %}
+    {% endfor %}
+  </ul>

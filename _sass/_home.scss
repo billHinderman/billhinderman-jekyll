@@ -1,0 +1,83 @@
+.home-group {
+  list-style: none;
+  max-width: 620px;
+  margin: 80px auto;
+  li {
+    display: inline-block;
+    margin-right: 88px;
+    &:nth-child(3n+3) {
+        margin-left: 166px;
+    }
+    &:nth-child(3n+2) { //
+        margin-right: 0;
+    }
+    //Add negative top margin to every child after the 3rd diamond
+    &:nth-child(n+2) {
+        margin-top: -80px;
+    }
+    &.circle{
+      margin-left: -54px;
+      .home-group-element {
+        border-radius: 50%;
+        height: 228px;
+        position: relative;
+        z-index: 2;
+        width: 228px;
+      }
+    }
+  }
+  .home-group-element {
+    background: $grey_dk;
+    background-clip: padding-box !important;
+    background-size: cover;
+    border: 8px solid $white;
+    display: table-cell;
+    font-family: $helvetica;
+    height: 240px;
+    position: relative;
+    text-decoration: none;
+    transform: rotate(45deg);
+    width: 240px;
+    &.ghost {
+      background: none;
+    }
+  }
+  .home-group-content {
+    display: block;
+    height: 100%;
+    position: absolute;
+    //transform: rotate(-45deg);
+    width: 100%;
+    &.pull {
+      bottom: -27px;
+      right: 27px;
+    }
+  }
+  .home-group-title {
+    color: $grey_dk;
+    font-weight: bold;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    b {
+      display: block;
+      font-size: .5*$em;
+      margin-bottom: -6px;
+    }
+    &.pull-bottom {
+      bottom: -28px;
+      transform: rotate(180deg);
+    }
+    &.pull-left {
+      left: -28px;
+      transform: rotate(-90deg);
+    }
+    &.pull-right {
+      right: -28px;
+      transform: rotate(90deg);
+    }
+    &.pull-top {
+      top: -28px;
+    }
+  }
+}
