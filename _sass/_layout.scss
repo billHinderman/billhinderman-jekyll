@@ -15,13 +15,13 @@
   width: 100%;
 }
 .wrapper-s {
-  max-width: 50*$em;
+  max-width: 50*$em;  //800
 }
 .wrapper {
-  max-width: 64*$em;
+  max-width: 64*$em;  //1024
 }
 .wrapper-l {
-  max-width: 80*$em;
+  max-width: 80*$em;  //1280
 }
 .wrapper-max {
   padding: 0 2*$em;

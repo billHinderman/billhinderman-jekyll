@@ -1,111 +1,74 @@
 ---
 layout: slim
 ---
-
-<ul class='home-group'>
-  <li>
-    <a href="/writes" class="home-group-element" style="background-image:url('/assets/images/cursive.svg');">
-      <span class="home-group-title pull-top">
-        <b>fig. 1</b>
-        <span>Writing</span>
-      </span>
-    </a>
-  </li>
-  <li>
-    <div class="home-group-element ghost">
-      <span class="home-group-content">
-        <img src="{{ site.baseurl }}/assets/images/chrome/stripes_grey_dk.svg" />
-      </span>
-    </div>
-  </li>
-  <li>
-    <a href="/speaks" class="home-group-element">
-      <span class="home-group-title pull-right">
-        <b>fig. 2</b>
-        <span>Speaking</span>
-      </span>
-    </a>
-  </li>
-  <li>
-    <a href="/contact" class="home-group-element">
-      <span class="home-group-title pull-left">
-        <b>fig. 3</b>
-        <span>Contact</span>
-      </span>
-    </a>
-  </li>
-  <li class="circle">
-    <a href="/is" class="home-group-element">
-      <span class="home-group-title"></span>
-    </a>
-  </li>
-  <li>
-    <a href="http://www.responsivedatavisualization.com" target="_blank" class="home-group-element">
-      <span class="home-group-title pull-top align-right">
-        <b>fig. 5</b>
-        <span>Book</span>
-      </span>
-    </a>
-  </li>
-  <li>
-    <div class="home-group-element">
-      <span class="home-group-content pull">
-        <img src="{{ site.baseurl }}/assets/images/chrome/dots_square_yellow.svg" />
-      </span>
-    </div>
-  </li>
-  <li>
-    <a href="/makes" class="home-group-element">
-      <span class="home-group-title pull-right">
-        <b>fig. 6</b>
-        <span>Projects</span>
-      </span>
-    </a>
-  </li>
-  <li>
-    <a href="http://www.starbasego.com" target="_blank" class="home-group-element">
-      <span class="home-group-title pull-bottom">
-        <b>fig. 7</b>
-        <span>Studio</span>
-      </span>
-    </a>
-  </li>
-</ul>
-
 <div class="home">
-
-  <h2 class="page-heading">Better Writing</h2>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      {% if post.categories contains 'featured' %}
-        <li>
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-          <h2>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          </h2>
-        </li>
-      {% endif %}
-    {% endfor %}
+  <ul class='home-group'>
+    <li>
+      <a href="/writes" class="home-group-element" style="background-image:url('{{ site.baseurl }}/assets/images/backgrounds/writing.png');">
+        <span class="home-group-title pull-top">
+          <b>fig. 1</b>
+          <span>Writing</span>
+        </span>
+      </a>
+    </li>
+    <li>
+      <div class="home-group-element ghost">
+        <span class="home-group-content">
+          <img src="{{ site.baseurl }}/assets/images/chrome/stripes_bottom_grey_dk.svg" />
+        </span>
+      </div>
+    </li>
+    <li>
+      <a href="/speaks" class="home-group-element" style="background-image:url('{{ site.baseurl }}/assets/images/backgrounds/speaking.png');">
+        <span class="home-group-title pull-right">
+          <b>fig. 2</b>
+          <span>Speaking</span>
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="/makes" class="home-group-element" style="background-image:url('{{ site.baseurl }}/assets/images/backgrounds/projects.png');">
+        <span class="home-group-title pull-left">
+          <b>fig. 3</b>
+          <span>Projects</span>
+        </span>
+      </a>
+    </li>
+    <li class="circle">
+      <a href="/is" class="home-group-element" style="background-image:url('{{ site.baseurl }}/assets/images/couch-yellow.png');">
+        <span class="home-group-title"></span>
+      </a>
+    </li>
+    <li>
+      <a href="http://www.responsivedatavisualization.com" target="_blank" class="home-group-element" style="background-image:url('{{ site.baseurl }}/assets/images/backgrounds/book.png');">
+        <span class="home-group-title pull-top align-right">
+          <b>fig. 5</b>
+          <span>Book</span>
+        </span>
+      </a>
+    </li>
+    <li>
+      <div class="home-group-element">
+        <span class="home-group-content pull">
+          <img src="{{ site.baseurl }}/assets/images/chrome/dots_square_yellow.svg" />
+        </span>
+      </div>
+    </li>
+    <li>
+      <a href="/contact" class="home-group-element" style="background-image:url('{{ site.baseurl }}/assets/images/backgrounds/contact.png');">
+        <span class="home-group-title pull-right">
+          <b>fig. 6</b>
+          <span>Contact</span>
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="http://www.starbasego.com" target="_blank" class="home-group-element" style="background-image:url('{{ site.baseurl }}/assets/images/backgrounds/studio.png');">
+        <span class="home-group-title pull-bottom">
+          <b>fig. 7</b>
+          <span>Studio</span>
+        </span>
+      </a>
+    </li>
   </ul>
-
-  <h2 class="page-heading">Worse Writing</h2>
-  <ul class="post-list">
-    {% for post in site.posts %}
-      {% unless post.categories contains 'featured' %}
-        <li>
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-          <h2>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          </h2>
-        </li>
-      {% endunless %}
-    {% endfor %}
-  </ul>
-
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
 </div>
