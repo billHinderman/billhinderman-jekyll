@@ -15,16 +15,17 @@
     &:nth-child(n+2) {
         margin-top: -80px;
     }
-    &.circle{
+    &.circle {
       margin-left: -54px;
       .home-group-element {
         border-radius: 50%;
         height: 228px;
         position: relative;
-        z-index: 2;
         width: 228px;
+        z-index: 2;
       }
     }
+
   }
   .home-group-element {
     background: $grey_dk;
@@ -37,26 +38,45 @@
     position: relative;
     text-decoration: none;
     transform: rotate(45deg);
+    transition: all 1.6s;
     width: 240px;
     &.ghost {
       background: none;
+      border-color: rgba(0,0,0,0);
+      &.animate-in {
+        transform: rotate(45deg);
+        .home-group-content {
+          margin-left: 54px;
+        }
+      }
+    }
+    &.animate-in {
+      transform: rotate(45deg) scale(.875);
+      opacity: 0;
     }
   }
   .home-group-content {
     display: block;
     height: 100%;
     position: absolute;
-    //transform: rotate(-45deg);
+    transition: all 1.6s;
     width: 100%;
     &.pull {
       bottom: -27px;
       right: 27px;
+      transition: all 1.6s;
+      &.animate-in {
+        bottom: -54px;
+        opacity: 0;
+        right: 54px;
+      }
     }
   }
   .home-group-title {
     color: $grey_dk;
     font-weight: bold;
     position: absolute;
+    transition: all .8s;
     height: 100%;
     width: 100%;
     b {
@@ -67,17 +87,32 @@
     &.pull-bottom {
       bottom: -28px;
       transform: rotate(180deg);
+      &.animate-in {
+        margin-left: 16px;
+      }
     }
     &.pull-left {
       left: -28px;
       transform: rotate(-90deg);
+      &.animate-in {
+        margin-top: 16px;
+      }
     }
     &.pull-right {
       right: -28px;
       transform: rotate(90deg);
+      &.animate-in {
+        margin-top: -16px;
+      }
     }
     &.pull-top {
       top: -28px;
+      &.animate-in {
+        margin-left: -16px;
+      }
+    }
+    &.animate-in {
+      opacity: 0;
     }
   }
 }
