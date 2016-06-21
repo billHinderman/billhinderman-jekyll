@@ -17,7 +17,7 @@ $(function() {
 
   var $a4 = $('.animate-in-4');
   $a4.each(function(k) {
-    $(this).delay(4800+(400*k)).queue(function() {
+    $(this).delay(4400+(400*k)).queue(function() {
       $(this).removeClass('animate-in-4 animate-in')
       .dequeue();
     });

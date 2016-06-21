@@ -1,6 +1,7 @@
 .home-group {
   list-style: none;
   max-width: 620px;
+  padding-left: 28px;
   margin: 80px auto;
   li {
     display: inline-block;
@@ -38,7 +39,7 @@
     position: relative;
     text-decoration: none;
     transform: rotate(45deg);
-    transition: all 1.6s;
+    transition: all $transition-standard;
     width: 240px;
     &.ghost {
       background: none;
@@ -59,14 +60,13 @@
     display: block;
     height: 100%;
     position: absolute;
-    transition: all 1.6s;
+    transition: all $transition-standard;
     width: 100%;
     &.pull {
       bottom: -27px;
       right: 27px;
-      transition: all 1.6s;
+      transition: all $transition-standard;
       &.animate-in {
-        bottom: -54px;
         opacity: 0;
         right: 54px;
       }

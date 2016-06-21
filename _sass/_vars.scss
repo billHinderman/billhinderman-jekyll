@@ -1,6 +1,6 @@
 $helvetica: Helvetica Neue,"nimbus-sans",Helvetica,Arial,sans-serif;
 $serif: "freight-text-pro",Georgia,serif;
-$baskerville: Baskerville,"baskerville-urw",Georgia,serif; 
+$baskerville: Baskerville,"baskerville-urw",Georgia,serif;
 
 $white: #fdfdfd;
 $white_off: #fefefb;
@@ -27,6 +27,8 @@ $m-l: 800px;
 $l: 960px;
 $l-xl: 1120px;
 $xl: 1280px;
+
+$transition-standard: 1.6s;
 
 
 @-webkit-keyframes love {0%, 100%{-webkit-transform:scale(1);transform:scale(1)}10%{-webkit-transform:scale(1.3);transform:scale(1.3)}25%{-webkit-transform:scale(1.2);transform:scale(1.2)}35%{-webkit-transform:scale(1.3);transform:scale(1.3)}}
