@@ -1,26 +1,26 @@
 .link,
 .bar {
-  color: $black;
+  color: $grey_dk;
   display: inline-block;
   font-weight: bold;
   font-family: $helvetica;
-  line-height: 1em;
+  line-height: 1;
   position: relative;
   text-decoration: none;
 }
 .link.text-white,
 .bar.text-white {
-  color: $white;
+  color: $white_not;
 }
 .link:after,
 .bar:after {
-  background: $black;
+  background: $grey_dk;
   content: '';
   left: 0;
   height: .1875em;
   position: absolute;
   top: -.1875em;
-  transition: background .3s;
+  transition: background $transition-short;
   width: 100%;
 }
 .link:hover:after {
@@ -32,11 +32,11 @@
 }
 .bar.bar-black:after,
 .link.bar-black:after {
-  background: $black;
+  background: $grey_dk;
 }
 .bar.bar-white:after,
 .link.bar-white:after {
-  background: $white;
+  background: $white_not;
 }
 .bar.bar-yellow:after,
 .link.bar-yellow:after {
@@ -45,10 +45,10 @@
 
 .bar.bar-hover-black:hover:after,
 .link.bar-hover-black:hover:after {
-  background: $black !important;
+  background: $grey_dk !important;
 }
 .bar.bar-hover-white:hover:after,
-.link.bar-hover-white:hover:after { 
+.link.bar-hover-white:hover:after {
   background: $white !important;
 }
 .bar.bar-hover-yellow:hover:after,
@@ -56,7 +56,35 @@
   background: $yellow !important;
 }
 
-
-.page-main .link-inline {
-  font-size: $em
+.link-inline {
+  font-size: $em;
+}
+.link[target^="blank"],
+.link[target^="_blank"],
+.external {
+  padding-left: 1.414*$em;
+  &:before {
+    background-image: url('../assets/images/icons/external_link_grey_dk.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: "";
+    display: block;
+    height: 1.414*$em;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: background $transition-short;
+    width: $em;
+  }
+  &:hover:before {
+    background-image: url('../assets/images/icons/external_link_yellow.svg');
+  }
+}
+a.social {
+  background: $yellow;
+  border-radius: 50%;
+  color: $white_not;
+  display: block;
+  height: 1.414*$em;
+  width: 1.414*$em;
 }

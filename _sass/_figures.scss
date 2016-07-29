@@ -1,0 +1,35 @@
+figure {
+  width: 100%;
+}
+figure.full {
+  @media screen and (min-width: $l-xl) {
+    margin-left: -1*$em;
+    width: $l-xl;
+  }
+  @media screen and (min-width: $xl) {
+    margin-left: -9*$em;
+    width: $xl;
+  }
+}
+figure.pull-left {
+  @media screen and (min-width: $m-l) {
+    float: left;
+    margin-left: -1*$em;
+    margin-right: 2.828*$em;
+    width: 50%;
+  }
+  @media screen and (min-width: $xl) {
+    margin-left: -9*$em;
+  }
+}
+figure.pull-right {
+  @media screen and (min-width: $m-l) {
+    float: right;
+    margin-left: 2.828*$em;
+    margin-right: -1*$em;
+    width: 50%;
+  }
+  @media screen and (min-width: $xl) {
+    margin-right: -9*$em;
+  }
+}

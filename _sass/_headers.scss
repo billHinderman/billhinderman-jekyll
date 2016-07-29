@@ -7,22 +7,25 @@
   height: 10.75*$em;
   justify-content: space-between;
 }
-.site-title {
 
-}
 #header-logo {
   width: 5*$em;
 }
-
-.page-header {
-  align-items: center;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  justify-content: left;
-  margin-top: -10.75*$em;
-  min-height: 66.666vh;
-  padding-top: 8.0625*$em;
-  position: relative;
-  z-index: 0;
+.post-header {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+.post-hero img {
+  height: auto;
+}
+.page-title,
+.list-title {
+  color: $grey_dk;
+  font-size: $em;
+  b {
+    display: block;
+    font-size: .5*$em;
+    margin-bottom: -6px;
+  }
 }

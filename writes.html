@@ -1,9 +1,10 @@
 ---
-layout: page
+layout: list
 title: Writing
+list: Writing
+figure: fig. 1
 permalink: /writes
 ---
-
   <h2 class="page-heading">Better Writing</h2>
 
   <ul class="post-list">
@@ -26,7 +27,6 @@ permalink: /writes
       {% unless post.categories contains 'featured' %}
         <li>
           <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
           <h2>
             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
           </h2>

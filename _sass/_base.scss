@@ -1,9 +1,7 @@
 body {
-  background: $white;
-  color: $black;
-  display: flex;
+  background: $white_not;
+  color: $grey_dk;
   font-family: $serif;
-  flex-direction: column;
   line-height: 1.44;
   min-height: 100vh;
 }

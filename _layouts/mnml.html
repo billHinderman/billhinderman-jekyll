@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+
+    <div class="page-content">
+      <figure class="post-hero">
+        <img src="{{ site.baseurl }}{{ page.hero }}" />
+        <h1 class="page-title">
+          <b>{{ page.figure }}</b>
+          <span>{{ page.title }}</span>
+        </h1>
+      </figure>
+
+      <main class="wrapper">
+        {{ content }}
+      </main>
+    </div>
+
+    {% include footer.html %}
+  </body>
+
+</html>

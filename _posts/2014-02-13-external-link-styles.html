@@ -1,0 +1,26 @@
+---
+layout: post
+title:  "External Link Styles"
+date:   2014-02-13 15:02:14 -0500
+categories: jekyll update
+permalink: 'asdf4'
+---
+Had a thought: is there a perception difference in clicking internal links versus external?  Should there be one?
+
+Toyed around and am decently satisfied with this:<code></code>
+
+<code>
+a, .link
+<code>  </code>&amp;[rel^="external"],
+<code>  </code>&amp;[rel*=" external"],
+<code>  </code>&amp;[target^="blank"],
+<code>  </code>&amp;[target*="blank "],
+<code>  </code>&amp;:not([href*="website.com"]),
+<code>  </code>&amp;:not([href^="/"]),
+<code>  </code>&amp;:not([href^="#"]),
+<code>  </code>&amp;.external {
+<code>  </code><code>  </code>//external styles
+<code>  </code>}
+}</code>
+
+Some other methods are <a title="Target Only External Links" href="http://css-tricks.com/snippets/jquery/target-only-external-links/" target="_blank">here</a>.  Do with it what you'd like.

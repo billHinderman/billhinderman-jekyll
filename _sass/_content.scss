@@ -1,9 +1,123 @@
 .page-main {
   font-size: 1.414*$em;
-  flex-grow: 1;
   position: relative;
   z-index: 0;
 }
 .page-main > :first-child {
   padding-top: 2.828*$em;
+}
+
+p {
+  font-size: 1.414*$em;
+  line-height: 1.44;
+}
+p + p,
+p + ul,
+ul + p,
+p + section,
+section + p,
+p + figure,
+figure + p {
+  margin-top: 2.828*$em;
+}
+
+.post-date {
+  display: block;
+  font-family: $helvetica;
+  font-size: .5*$em;
+  font-weight: bold;
+  margin-bottom: -6px;
+}
+
+.conversation {
+  border-bottom: 1px solid $grey_lt;
+  border-top: 1px solid $grey_lt;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.828*$em 0;
+  max-width: 24*$em;
+  @include clearfix;
+
+  blockquote {
+    clear: both;
+    font-family: $helvetica;
+    max-width: 66.666%;
+    .conversation-speaker {
+      display: block;
+      font-weight: bold;
+      font-size: .707*$em;
+    }
+    p {
+      font-size: $em;
+      padding: .707*$em;
+      position: relative;
+    }
+
+    &:nth-of-type(odd) {
+      float: left;
+      .conversation-speaker {
+        margin-left: -.707*$em;
+      }
+      p {
+        background: $grey_lt;
+        color: $black;
+        &:after {
+          border-color: transparent $grey_lt transparent transparent;
+          border-style: solid;
+          border-width: 0 .707*$em .707*$em 0;
+          content: "";
+          height: 0;
+          left: -.707*$em + 1px;
+          position: absolute;
+          top: 0;
+          width: 0;
+        }
+      }
+    }
+    &:nth-of-type(even) {
+      float: right;
+      .conversation-speaker {
+        text-align: right;
+        margin-right: -.707*$em;
+      }
+      p {
+        background: $yellow;
+        color: $white_not;
+        &:after {
+          border-color: transparent transparent transparent $yellow;
+          border-style: solid;
+          border-width: 0 0 .707*$em .707*$em;
+          content: "";
+          height: 0;
+          position: absolute;
+          right: -.707*$em + 1px;
+          top: 0;
+          width: 0;
+        }
+      }
+    }
+  }
+  blockquote + blockquote {
+    margin-top: .707*$em;
+  }
+}
+
+#disqus_thread {
+  margin: auto;
+  max-width: 800px;
+  padding: 6*$em 0 0;
+}
+#share {
+  padding: 6*$em 2*$em 0;
+  text-align: center;
+  li {
+    display: inline-block;
+    padding: 0 .707*$em;
+    @media screen and (min-width: $s-m) {
+      padding: 0 1.414*$em;
+    }
+    @media screen and (min-width: $m) {
+      padding: 0 2.828*$em;
+    }
+  }
 }

@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header-hero">
+    <figure style="background-image: url('{{ site.baseurl }}/assets/images/heroes/{{ page.hero }}'); background-size: cover; background-repeat: no-repeat; background-position: center; height: 420px; width: 100%;">
+    </figure>
+    <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+    <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+</article>
+{% include share.html %}
+
+{% include comments.html %}
