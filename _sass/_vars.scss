@@ -20,14 +20,14 @@ $yellow_quiet: rgba($yellow,.4);
 
 $em: 16px;
 
-$s: 320px;
-$s-m: 480px;
-$m: 640px;
-$m-l: 800px;
-$l: 960px;
-$l-xl: 1024px;
-$xl: 1280px;
-$xxl: 1440px;
+$s: 20*$em;
+$s-m: 30*$em;
+$m: 40*$em;
+$m-l: 50*$em;
+$l: 60*$em;
+$l-xl: 64*$em;
+$xl: 80*$em;
+$xxl: 90*$em;
 
 $transition-standard: 1.6s;
 $transition-short: .3s;
