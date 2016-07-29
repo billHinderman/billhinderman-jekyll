@@ -33,3 +33,157 @@ figure.pull-right {
     margin-right: -9*$em;
   }
 }
+
+
+.conversation {
+  border-bottom: 1px solid $grey_lt;
+  border-top: 1px solid $grey_lt;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.828*$em 0;
+  max-width: 24*$em;
+  @include clearfix;
+
+  blockquote {
+    clear: both;
+    font-family: $helvetica;
+    max-width: 66.666%;
+    .conversation-speaker {
+      display: block;
+      font-weight: bold;
+      font-size: .707*$em;
+    }
+    p {
+      font-size: $em;
+      padding: .707*$em;
+      position: relative;
+    }
+  }
+  blockquote + blockquote {
+    margin-top: .707*$em;
+  }
+  &:not(.start-me) blockquote {
+    &:nth-of-type(odd) {
+      float: left;
+      .conversation-speaker {
+        margin-left: -.707*$em;
+      }
+      p {
+        background: $grey_lt;
+        color: $black;
+        &:after {
+          border-color: transparent $grey_lt transparent transparent;
+          border-style: solid;
+          border-width: 0 .707*$em .707*$em 0;
+          content: "";
+          height: 0;
+          left: -.707*$em + 1px;
+          position: absolute;
+          top: 0;
+          width: 0;
+        }
+      }
+    }
+    &:nth-of-type(even) {
+      float: right;
+      .conversation-speaker {
+        text-align: right;
+        margin-right: -.707*$em;
+      }
+      p {
+        background: $yellow;
+        color: $white_not;
+        &:after {
+          border-color: transparent transparent transparent $yellow;
+          border-style: solid;
+          border-width: 0 0 .707*$em .707*$em;
+          content: "";
+          height: 0;
+          position: absolute;
+          right: -.707*$em + 1px;
+          top: 0;
+          width: 0;
+        }
+      }
+    }
+  }
+  &.start-me blockquote {
+    &:nth-of-type(even) {
+      float: left;
+      .conversation-speaker {
+        margin-left: -.707*$em;
+      }
+      p {
+        background: $grey_lt;
+        color: $black;
+        &:after {
+          border-color: transparent $grey_lt transparent transparent;
+          border-style: solid;
+          border-width: 0 .707*$em .707*$em 0;
+          content: "";
+          height: 0;
+          left: -.707*$em + 1px;
+          position: absolute;
+          top: 0;
+          width: 0;
+        }
+      }
+    }
+    &:nth-of-type(odd) {
+      float: right;
+      .conversation-speaker {
+        text-align: right;
+        margin-right: -.707*$em;
+      }
+      p {
+        background: $yellow;
+        color: $white_not;
+        &:after {
+          border-color: transparent transparent transparent $yellow;
+          border-style: solid;
+          border-width: 0 0 .707*$em .707*$em;
+          content: "";
+          height: 0;
+          position: absolute;
+          right: -.707*$em + 1px;
+          top: 0;
+          width: 0;
+        }
+      }
+    }
+  }
+}
+
+.email {
+  border-bottom: 1px solid $grey_lt;
+  border-top: 1px solid $grey_lt;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.828*$em .3535*$em;
+  position: relative;
+  max-width: 24*$em;
+  @include clearfix;
+  p {
+    color: $black;
+    font-family: $helvetica;
+    font-size: $em;
+  }
+  &:after {
+    bottom: -1.414*$em;
+    color: $grey_lt;
+    content: "➡";
+    font-family: $helvetica;
+    font-size: .707*$em;
+    position: absolute;
+    right: 0;
+  }
+  &:before {
+    bottom: -1.414*$em;
+    color: $grey_lt;
+    content: "Reply";
+    font-family: $helvetica;
+    font-size: .707*$em;
+    left: 0;
+    position: absolute;
+  }
+}

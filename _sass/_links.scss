@@ -81,10 +81,24 @@
   }
 }
 a.social {
-  background: $yellow;
+  background: $white_not;
+  border: .3535*$em solid $grey_lt;
   border-radius: 50%;
   color: $white_not;
   display: block;
-  height: 1.414*$em;
-  width: 1.414*$em;
+  height: 2.121*$em;
+  position: relative;
+  transition: border-color $transition-short;
+  width: 2.121*$em;
+  svg {
+    fill: $grey_dk;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  &:hover {
+    border-color: $yellow;
+  }
 }
